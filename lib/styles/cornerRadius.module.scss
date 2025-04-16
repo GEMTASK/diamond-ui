@@ -1,0 +1,21 @@
+$radius: 0px, 2px, 4px, 8px, 12px, 16px, 24px, 32px;
+
+._max {
+  border-radius: 9999px;
+}
+
+@each $value in $radius {
+  ._#{$value} {
+    border-radius: $value;
+
+    // & > :first-child {
+    //   border-top-left-radius: $value;
+    //   border-top-right-radius: $value;
+    // }
+
+    // & > :last-child {
+    //   border-bottom-left-radius: $value;
+    //   border-bottom-right-radius: $value;
+    // }
+  }
+}
