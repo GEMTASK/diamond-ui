@@ -1,0 +1,47 @@
+.View {
+  --diamon-ui-version: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  // min-height: 0;
+  // flex-shrink: 0;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.flex {
+  flex: 1;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.border {
+  border: 1px solid var(--border-color);
+}
+
+.borderTop {
+  border-top: 1px solid var(--border-color);
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.borderLeft {
+  border-left: 1px solid var(--border-color);
+}
+
+.borderRight {
+  border-right: 1px solid var(--border-color);
+}
