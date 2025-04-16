@@ -1,6 +1,10 @@
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
-export function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
-  return <button className={styles.button} {...props} />
+function Button({
+  ...props
+  // }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+}: React.ComponentProps<"button">) {
+  return <button className={styles.button} {...props} />;
 }
 
+export default Button;
