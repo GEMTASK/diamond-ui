@@ -1,0 +1,53 @@
+@use "../modules/open-color/open-color.scss";
+
+.transparent {
+  background: transparent;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+}
+
+@each $colors, $hue in open-color.$oc-color-list {
+  @each $level, $color in $colors {
+    .#{$hue}-#{$level} {
+      background: $color;
+    }
+  }
+}
+
+.primary {
+  background: var(--primary-color);
+}
+
+.select {
+  background: var(--select-color);
+}
+
+.hilite {
+  background: var(--hilite-color);
+}
+
+.content {
+  background: var(--content-color);
+}
+
+.panel {
+  background: var(--panel-color);
+}
+
+.gutter {
+  background: var(--gutter-color);
+}
+
+.border {
+  background: var(--border-color);
+}
+
+.icon {
+  background: var(--icon-color);
+}
