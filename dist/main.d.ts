@@ -10,9 +10,9 @@ declare type AlignVertical = "top" | "middle" | "bottom";
 
 export declare function Button({ ...props }: React.ComponentProps<"button">): JSX.Element;
 
-declare type Color = Theme | "black" | "white" | `${keyof typeof hues}-${Range_2<0, 10>}`;
+export declare type Color = Theme | "black" | "white" | `${keyof typeof hues}-${Range_2<0, 10>}`;
 
-declare type Delegate<TProps, TDelegate extends React.ElementType, TOmit extends string = ""> = TProps & Omit<React.ComponentProps<TDelegate>, keyof TProps | TOmit>;
+export declare type Delegate<TProps, TDelegate extends React.ElementType, TOmit extends string = ""> = TProps & Omit<React.ComponentProps<TDelegate>, keyof TProps | TOmit>;
 
 declare type Enumerate<N extends number, Acc extends number[] = []> = Acc["length"] extends N ? Acc[number] : Enumerate<N, [...Acc, Acc["length"]]>;
 
@@ -40,7 +40,7 @@ declare type Range_2<F extends number, T extends number> = Exclude<Enumerate<T>,
 
 declare type Spacing = `${Values_2}` | `${Values_2} ${Values_2}`;
 
-declare type Theme = "primary" | "select" | "text" | "hilite" | "content" | "panel" | "gutter" | "icon" | "border";
+declare type Theme = "_primary" | "select" | "text" | "hilite" | "content" | "panel" | "gutter" | "icon" | "border";
 
 declare type Values = "0px" | "4px" | "8px" | "12px" | "16px" | "24px" | "32px";
 

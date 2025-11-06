@@ -8,7 +8,7 @@ type Enumerate<N extends number, Acc extends number[] = []> = Acc["length"] exte
 
 type Range<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
 
-type Theme = "primary" | "select" | "text" | "hilite" | "content" | "panel" | "gutter" | "icon" | "border";
+type Theme = "_primary" | "select" | "text" | "hilite" | "content" | "panel" | "gutter" | "icon" | "border";
 
 type Color = Theme | "black" | "white" | `${keyof typeof hues}-${Range<0, 10>}`;
 
