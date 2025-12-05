@@ -1,5 +1,6 @@
 import { JSX } from 'react/jsx-runtime';
 
+
 declare type Align = AlignStretch | `${AlignVertical} ${AlignHorizontal}`;
 
 declare type AlignHorizontal = "left" | "center" | "right" | "justify";
